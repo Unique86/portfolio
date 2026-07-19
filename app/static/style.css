@@ -225,27 +225,32 @@ li {
 
     background: #1e293b;
 
-    padding: 35px 20px;
+    padding: 30px;
 
     border-radius: 15px;
 
-    text-align: center;
-
     border: 1px solid #334155;
 
-    transition: .3s ease;
+    text-align: center;
 
-    cursor: default;
+    transition: transform .25s ease, box-shadow .25s ease;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    min-height: 250px;
 
 }
-
 .skill-card:hover {
 
     transform: translateY(-8px);
 
-    border-color: #38bdf8;
+    box-shadow: 0 12px 30px rgba(59,130,246,.25);
 
-    box-shadow: 0 10px 30px rgba(56,189,248,.20);
+    border-color: #3b82f6;
 
 }
 
@@ -257,11 +262,20 @@ li {
 
 .skill-card h3 {
 
-    margin-top: 20px;
+    margin-bottom: 20px;
 
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 
     color: white;
+
+}
+.skill-card p {
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    font-size: .95rem;
 
 }
 
